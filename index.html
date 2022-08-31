@@ -2485,625 +2485,229 @@ kg
             var slider_pos = 0;
             var select_tab = 0;
             var comments_info = {
-                "comment": {
-                    "category": "home",
-                    "type": "idol",
-                    "conditions": "none"
-                },
-                "comments_home_1": {
-                    "category": "home",
-                    "type": "home",
-                    "conditions": "get_idol"
-                },
-                "comments_home_2": {
-                    "category": "home",
-                    "type": "home",
-                    "conditions": "get_idol"
-                },
-                "comments_home_3": {
-                    "category": "home",
-                    "type": "home",
-                    "conditions": "get_idol"
-                },
-                "comments_home_4": {
-                    "category": "home",
-                    "type": "home",
-                    "conditions": "get_idol"
-                },
-                "comments_home_5": {
-                    "category": "home",
-                    "type": "home_max",
-                    "conditions": "love_max"
-                },
-                "comments_home_6": {
-                    "category": "home",
-                    "type": "home_max",
-                    "conditions": "love_max"
-                },
-                "comments_home_7": {
-                    "category": "home",
-                    "type": "home_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_home_8": {
-                    "category": "home",
-                    "type": "home_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_home_9": {
-                    "category": "home",
-                    "type": "home_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_home_10": {
-                    "category": "home",
-                    "type": "home_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_home_11": {
-                    "category": "home",
-                    "type": "home_tm",
-                    "conditions": "love_max"
-                },
-                "comments_home_12": {
-                    "category": "home",
-                    "type": "home_tm",
-                    "conditions": "love_max"
-                },
-                "comments_room_1": {
-                    "category": "room",
-                    "type": "room",
-                    "conditions": "get_idol"
-                },
-                "comments_room_2": {
-                    "category": "room",
-                    "type": "room",
-                    "conditions": "get_idol"
-                },
-                "comments_room_3": {
-                    "category": "room",
-                    "type": "room",
-                    "conditions": "get_idol"
-                },
-                "comments_room_4": {
-                    "category": "room",
-                    "type": "room",
-                    "conditions": "get_idol"
-                },
-                "comments_room_5": {
-                    "category": "room",
-                    "type": "room_max",
-                    "conditions": "love_max"
-                },
-                "comments_room_6": {
-                    "category": "room",
-                    "type": "room_max",
-                    "conditions": "love_max"
-                },
-                "comments_room_7": {
-                    "category": "room",
-                    "type": "room_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_room_8": {
-                    "category": "room",
-                    "type": "room_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_room_9": {
-                    "category": "room",
-                    "type": "room_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_room_10": {
-                    "category": "room",
-                    "type": "room_touch",
-                    "conditions": "get_idol"
-                },
-                "comments_room_11": {
-                    "category": "room",
-                    "type": "room_tm",
-                    "conditions": "love_max"
-                },
-                "comments_room_12": {
-                    "category": "room",
-                    "type": "room_tm",
-                    "conditions": "love_max"
-                },
-                "comments_live_1": {
-                    "category": "live",
-                    "type": "live_start",
-                    "conditions": "get_idol"
-                },
-                "comments_live_2": {
-                    "category": "live",
-                    "type": "live_start",
-                    "conditions": "get_idol"
-                },
-                "comments_live_3": {
-                    "category": "live",
-                    "type": "live_skill",
-                    "conditions": "get_idol"
-                },
-                "comments_live_4": {
-                    "category": "live",
-                    "type": "live_skill",
-                    "conditions": "get_idol"
-                },
-                "comments_live_5": {
-                    "category": "live",
-                    "type": "live_skill",
-                    "conditions": "get_idol"
-                },
-                "comments_live_6": {
-                    "category": "live",
-                    "type": "live_clear",
-                    "conditions": "get_idol"
-                },
-                "comments_live_7": {
-                    "category": "live",
-                    "type": "live_clear",
-                    "conditions": "get_idol"
-                },
-                "comments_love_up": {
-                    "category": "love",
-                    "type": "love_up",
-                    "conditions": "love_max"
-                },
-                "comments_love_max_1": {
-                    "category": "love",
-                    "type": "love_max",
-                    "conditions": "love_max"
-                },
-                "comments_love_max_2": {
-                    "category": "love",
-                    "type": "love_max",
-                    "conditions": "love_max"
-                },
-                "comments_love_max_3": {
-                    "category": "love",
-                    "type": "love_max",
-                    "conditions": "love_max"
-                },
-                "c_h1": {
-                    "category": "all",
-                    "type": "h1",
-                    "conditions": "none"
-                },
-                "c_h2": {
-                    "category": "all",
-                    "type": "h2",
-                    "conditions": "none"
-                },
-                "c_h3": {
-                    "category": "all",
-                    "type": "h3",
-                    "conditions": "none"
-                },
-                "c_h4": {
-                    "category": "all",
-                    "type": "h4",
-                    "conditions": "none"
-                },
-                "c_h5": {
-                    "category": "all",
-                    "type": "h5",
-                    "conditions": "none"
-                },
-                "c_h6": {
-                    "category": "all",
-                    "type": "h6",
-                    "conditions": "none"
-                },
-                "c_h7": {
-                    "category": "all",
-                    "type": "h7",
-                    "conditions": "none"
-                },
-                "c_h8": {
-                    "category": "all",
-                    "type": "h8",
-                    "conditions": "none"
-                },
-                "c_h9": {
-                    "category": "all",
-                    "type": "h9",
-                    "conditions": "none"
-                },
-                "c_r1": {
-                    "category": "all",
-                    "type": "r1",
-                    "conditions": "none"
-                },
-                "c_r2": {
-                    "category": "all",
-                    "type": "r2",
-                    "conditions": "none"
-                },
-                "c_r3": {
-                    "category": "all",
-                    "type": "r3",
-                    "conditions": "none"
-                },
-                "c_r4": {
-                    "category": "all",
-                    "type": "r4",
-                    "conditions": "none"
-                },
-                "c_r5": {
-                    "category": "all",
-                    "type": "r5",
-                    "conditions": "none"
-                },
-                "c_r6": {
-                    "category": "all",
-                    "type": "r6",
-                    "conditions": "none"
-                },
-                "c_l1": {
-                    "category": "all",
-                    "type": "l1",
-                    "conditions": "none"
-                },
-                "c_l2": {
-                    "category": "all",
-                    "type": "l2",
-                    "conditions": "none"
-                },
-                "c_l3": {
-                    "category": "all",
-                    "type": "l3",
-                    "conditions": "none"
-                },
-                "c_l4": {
-                    "category": "all",
-                    "type": "l4",
-                    "conditions": "none"
-                },
-                "c_l5": {
-                    "category": "all",
-                    "type": "l5",
-                    "conditions": "none"
-                },
-                "c_l6": {
-                    "category": "all",
-                    "type": "l6",
-                    "conditions": "none"
-                },
-                "c_l7": {
-                    "category": "all",
-                    "type": "l7",
-                    "conditions": "none"
-                },
-                "c_l8": {
-                    "category": "all",
-                    "type": "l8",
-                    "conditions": "none"
-                },
-                "c_d1": {
-                    "category": "all",
-                    "type": "d1",
-                    "conditions": "none"
-                },
-                "c_d2": {
-                    "category": "all",
-                    "type": "d1",
-                    "conditions": "none"
-                },
-                "c_d3": {
-                    "category": "all",
-                    "type": "d2",
-                    "conditions": "none"
-                },
-                "c_d4": {
-                    "category": "all",
-                    "type": "d3",
-                    "conditions": "none"
-                },
-                "c_d5": {
-                    "category": "all",
-                    "type": "d4",
-                    "conditions": "none"
-                },
-                "c_d6": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d7": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d8": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d9": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d10": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d11": {
-                    "category": "all",
-                    "type": "d5",
-                    "conditions": "none"
-                },
-                "c_d12": {
-                    "category": "all",
-                    "type": "d6",
-                    "conditions": "none"
-                },
-                "c_d13": {
-                    "category": "all",
-                    "type": "d6",
-                    "conditions": "none"
-                },
                 "mltd_a1": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_1",
                     "conditions": "none"
                 },
                 "mltd_a2": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_2",
                     "conditions": "none"
                 },
                 "mltd_a3": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_3",
                     "conditions": "none"
                 },
                 "mltd_ag1": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_25",
                     "conditions": "none"
                 },
                 "mltd_ag2": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_50",
                     "conditions": "none"
                 },
                 "mltd_ag3": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_75",
                     "conditions": "none"
                 },
                 "mltd_ag4": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_max",
                     "conditions": "none"
                 },
                 "mltd_ag5": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_max",
                     "conditions": "none"
                 },
                 "mltd_ag6": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "awake_gauge_max",
                     "conditions": "none"
                 },
                 "mltd_g1": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "greeting",
                     "conditions": "none"
                 },
                 "mltd_g2": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "greeting",
                     "conditions": "none"
                 },
                 "mltd_g3": {
-                    "category": "mltd",
+                    "category": "home",
                     "type": "greeting",
                     "conditions": "none"
                 },
                 "mltd_c1": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "costume",
                     "conditions": "none"
                 },
                 "mltd_c2": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "costume",
                     "conditions": "none"
                 },
                 "mltd_c3": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "costume",
                     "conditions": "none"
                 },
                 "mltd_c4": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "costume",
                     "conditions": "none"
                 },
                 "mltd_u1": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u2": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u3": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u4": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u5": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u6": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u7": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u8": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u9": {
-                    "category": "mltd",
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_u10": {
-                    "category": "mltd",
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u11": {
+                    "category": "dress",
                     "type": "unique",
                     "conditions": "none"
                 },
                 "mltd_l1": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "live_start",
                     "conditions": "none"
                 },
                 "mltd_l2": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report",
                     "conditions": "none"
                 },
                 "mltd_l3": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report",
                     "conditions": "none"
                 },
                 "mltd_l4": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report",
                     "conditions": "none"
                 },
                 "mltd_l5": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report",
                     "conditions": "none"
                 },
                 "mltd_l6": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_score",
                     "conditions": "none"
                 },
                 "mltd_l7": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_score",
                     "conditions": "none"
                 },
                 "mltd_l8": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_combo",
                     "conditions": "none"
                 },
                 "mltd_l9": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_combo",
                     "conditions": "none"
                 },
                 "mltd_l10": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_clear",
                     "conditions": "none"
                 },
                 "mltd_l11": {
-                    "category": "mltd",
+                    "category": "live",
                     "type": "report_clear",
                     "conditions": "none"
                 },
                 "mltd_l12": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "lank_up",
                     "conditions": "none"
                 },
                 "mltd_d1": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "d3",
                     "conditions": "none"
                 },
                 "mltd_d2": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "d3",
                     "conditions": "none"
                 },
                 "mltd_d3": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "m_lesson",
                     "conditions": "none"
                 },
                 "mltd_d4": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "m_lesson",
                     "conditions": "none"
                 },
                 "mltd_d5": {
-                    "category": "mltd",
+                    "category": "etc",
                     "type": "d6",
                     "conditions": "none"
                 }
             };
             var type_names = {
-                "idol": "프로필 코멘트",
-                "home": "홈",
-                "home_max": "홈(친애도MAX)",
-                "home_touch": "홈(터치)",
-                "home_tm": "홈(터치+친애도MAX)",
-                "room": "룸",
-                "room_max": "룸(친애도MAX)",
-                "room_touch": "룸(터치)",
-                "room_tm": "룸(터치+친애도MAX)",
-                "live_start": "LIVE개시",
-                "live_clear": "LIVE클리어",
-                "live_skill": "LIVE특기",
-                "love_up": "친애도UP",
-                "love_max": "친애도MAX",
-                "h1": "홈(아침)",
-                "h2": "홈(낮)",
-                "h3": "홈(밤)",
-                "h4": "홈(스테미너MAX)",
-                "h5": "더미데이터",
-                "h6": "홈(동료신청)",
-                "h7": "홈(이벤트개최중)",
-                "h8": "홈(선물함)",
-                "h9": "홈(방치)",
-                "r1": "룸 상호작용(가구)",
-                "r2": "룸 상호작용(아로마)",
-                "r3": "룸 상호작용(인형)",
-                "r4": "룸 상호작용(거울)",
-                "r5": "룸 상호작용(운동기구)",
-                "r6": "룸(방치)",
-                "l1": "LIVE실패",
-                "l2": "FULL COMBO",
-                "l3": "LIVE종료(랭크S)",
-                "l4": "LIVE종료(랭크A)",
-                "l5": "LIVE종료(랭크B)",
-                "l6": "LIVE종료(랭크C)",
-                "l7": "LIVE종료(랭크x)",
-                "l8": "프로듀서 레벨업",
-                "d1": "이름",
-                "d2": "부름",
                 "d3": "레슨",
-                "d4": "스타레슨",
-                "d5": "더미데이터",
                 "d6": "타이틀 콜",
                 "awake_1": "카드보이스 각성 전",
                 "awake_2": "카드보이스 각성 후",
@@ -3125,11 +2729,9 @@ kg
             };
             var category_names = {
                 "home": "홈",
-                "room": "룸",
+                "dress": "후레아이",
                 "live": "라이브",
-                "love": "친애도",
-                "all": "공통",
-                "mltd": "밀리시타 콜라보"
+                "etc": "기타"
             };
             var conditions_names = {
                 "none": "조건 없음",
