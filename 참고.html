@@ -1,0 +1,1771 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>아이돌마스터 밀리언 라이브 시어터 데이즈</title>
+    <link rel="stylesheet" type="text/css" href="12008305/css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="12008305/image_sp/ui/icon_bookmark.png">
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="12008305/js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 139087231;
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D281496550";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+            var _ua = window.navigator.userAgent.toLowerCase();
+            window.onerror = function(msg, file, line, col, error) {
+                $.ajax({
+                    url: _url,
+                    type: 'post',
+                    data: {
+                        'ua': _ua,
+                        'viewer_id': window.viewer_id,
+                        'path': _path,
+                        'line': line,
+                        'column': col,
+                        'error': error,
+                        'spec': _spec,
+                        'spec_obj': _spec_obj,
+                        'version': version
+                    }
+                })
+            };
+        })();
+    </script>
+    <script src="12008305/js/underscore-min.js"></script>
+    <script src="12008305/js/require.js"></script>
+    <script src="12008305/js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "12008305/js/easeljs-0.8.2.min",
+                easeljs_0_7_1: "12008305/js/easeljs-0.7.1.min", //スプライトを読むためのバージョン
+                tweenjs: "12008305/js/tweenjs-0.6.2.min",
+                movieclipjs: "12008305/js/movieclip-0.7.1.min",
+                createjs: "12008305/js/createjs-2015.11.26.min",
+            }
+        })
+    </script>
+    <script src="12008305/js/common.js"></script>
+    <script src="12008305/js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/idol_gallery/idol_detail/dad249d2193e48fede1efb6b86ce152f');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='12008305/js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+</head>
+
+<body id="idol_gallery" class="idol_detail">
+    <div id="top" class="page_container jsOnBtn">
+        <nav class="area_menu_header">
+            <div class="area_menu_header_6btn">
+                <h1 id="JtextLimit">밀리시타 갤러리</h1>
+                <ul>
+                    <li><a class="head_menu_01" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_02" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_03" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_04" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_05" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_06 se_000" href="#" id="headerAcd">
+                            <div></div>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <input id="delay" type="hidden" value="0">
+        <link rel="stylesheet" type="text/css" href="12008305/css/rich/idol_gallery.css" media="all">
+        <style>
+            .idolProfile {
+                margin-bottom: 0;
+            }
+        </style>
+        <div id="idol-base-content" class="m-Btm10">
+        </div>
+        <div class="idolList" style="height:66px;overflow:hidden;position:relative;top:-5px;">
+            <ul class="slides">
+                <li style="width: 318px;padding-left: 2px">
+                    <div class="displayBox">
+                        <div class="idol" style="background:url(12008305/image_sp/card/m/204xxx0013_0_l.png) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="0">
+                        </div>
+                        <div class="idol" style="background:url(12008305/image_sp/card/m/204xxx0013_1_l.png) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="1">
+                        </div>
+                        <div class="idol" style="background:url(12008305/image_sp/card/m/205xxx0013_0_l.png) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="2">
+                        </div>
+                        <div class="idol" style="background:url(12008305/image_sp/card/m/205xxx0013_1_l.png) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="3">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ol class="icon_navi" style="position:relative;margin-bottom: -1px;margin-top: -7px;">
+            <li><a>1</a></li>
+        </ol>
+        <div id="tab-content" style="position:relative;z-index:1">
+        </div>
+        <div class="area_tab_1">
+            <div id="profile-content">
+            </div><!--
+            <div class="displayBox" style="-webkit-box-pack:center;width:300px;">
+                <div style="width:50%">
+                    <a class="btn_3rd_anniversary js_submit_check_idol_comment_3rd m-Top10 t-Cnt jsOnDesignBtn"></a>
+                    <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcampaign%2Fcheck_idol_comment%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D725481991' class="form_check_idol_comment_3rd" style="display:none;">
+                        <input type="hidden" name="character_id" value="26">
+                        <input type="hidden" name="select_card_hash" value="">
+                    </form>
+                </div>
+                <div style="width:50%">
+                    <a class="btn_5th_anniversary js_submit_check_idol_comment_5th m-Top10 t-Cnt jsOnDesignBtn"></a>
+                    <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcampaign_present%2Fredirect_flash_idol_comment_replay%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D29114223' class="form_check_idol_comment_5th" style="display:none;">
+                        <input type="hidden" name="card_hash" value="">
+                        <input type="hidden" name="redirect_url" value="">
+                        <input type="hidden" name="campaign_id" value="114">
+                        <input type="hidden" name="chapter_id" value="1">
+                    </form>
+                </div>
+            </div>-->
+        </div>
+        <div class="area_tab_2">
+            <div id="comment-content">
+            </div>
+        </div>
+        <div class="area_tab_3">
+          <!--test-->
+          <section class="area_story_collection_tab  m-Btm8">
+              <div class="selectArea type_02  m-Btm8">
+                  <form action="#" name="area_select_form" method="post" style="margin-bottom: 0px;">
+                      <div class="area-btn-common _base-width">
+                          <select name="js_area_switch" id="js_area_switch" class="search_pulldown_1_5" style="font-size:12px;">
+                              <option value="1">블로그</option><!--
+                              <option value="2">추억 에피소드</option>-->
+                          </select>
+                          <a id="jsAreaSwitchBtn" class="btn_decision_sub_line_3">
+                              선택
+                          </a>
+                      </div>
+                  </form>
+              </div>
+
+              <div id="area_tab_1" class="t-Cnt">
+<!--
+
+                <div id="story-content" class="jsOnDesignBtn-wrap">
+                </div>
+
+              </div>
+              
+              <div id="area_tab_2" class="t-Cnt" style="display:none">
+-->
+
+
+              </div>
+
+          </section>
+          <!--test-->
+        </div>
+        <div class="area_tab_4">
+            <div id="parameter-content" class="jsOnBtn-wrap">
+            </div>
+        </div>
+        <style type="text/css">
+            <!--
+            .checkForm {
+                width: 260px;
+                height: 32px;
+                position: relative;
+                margin: 5px 10px;
+                text-align: center;
+                line-height: 34px;
+                float: left;
+                padding-left: 28px;
+            }
+
+            .ep_on {
+                background: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Frich%2Ficon%2Ficon_checkbox_on.png%3Fv%3D20170222083846') no-repeat 35px 5px;
+                background-size: 21px;
+            }
+
+            .ep_off {
+                background: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Frich%2Ficon%2Ficon_checkbox_off.png%3Fv%3D20170222083846') no-repeat 35px 5px;
+                background-size: 21px;
+            }
+            -->
+        </style>
+        
+        
+        <!--탭 테스트-->
+        <script type="text/javascript">
+            $(function() {
+                $('#jsAreaSwitchBtn').on('click', function() {
+                    $("[id^='area_tab_']").hide();
+                    $("[id^='area_title_']").hide();
+                    $('#area_tab_' + $('#js_area_switch').val()).show();
+                    $('#area_title_' + $('#js_area_switch').val()).show();
+                    return false;
+                }).trigger("click");
+            });
+        </script>
+        <script src="12008305/js/ilibrary.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $('#story_collection_tab_sub').tab_switch({
+                contents: ".area_tab",
+                start: 1 + 0
+            });
+            $('#story_collection_tab').tab_switch({
+                tabs: "[class^='tab_line_']",
+                contents: ".area_story_collection_tab",
+                start: 0
+            });
+        </script>
+        <!--탭 테스트-->
+        
+        
+        <script type="text/template" id="tab-4-template">
+            <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
+</div>
+</script>
+        <script type="text/template" id="tab-3-template">
+            <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
+<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
+<a name="tab_3" href="#" style='display:none;'>에피소드</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
+</div>
+</script>
+        <script type="text/template" id="idol-base-template">
+            <div style="position:relative;top:-20px;padding-top:24px;height:312px;margin-bottom:-143px;">
+<div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div>
+<% if(idol_detail.data.rarity <= 2) { %>
+<% opacity = 0.5 %>
+<% } else if (idol_detail.data.rarity <= 4) { %>
+<% opacity = 0.6 %>
+<% } else { %>
+<% opacity = 0 %>
+<% } %>
+<div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div>
+<div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;">
+<div class="t-Lft" style="width:50%">
+<% if(idol_detail.is_exist_archive) { %>
+<a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
+<% } else { %>
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fblank_l.jpg%3Fv%3D20170222083833' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
+<% } %>
+</div>
+<div class="t-Rft" style="width:50%">
+<div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
+<div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
+<div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
+</div>
+<div class="detail_idol_num_<%- idol_detail.data.attribute %>">
+<div class="detail_idol_register_num"><span class="yellow">4</span> / 4</div>
+<div class="detail_idol_love_num"><span class="yellow">4</span> / 4</div>
+</div>
+<% if(birthday_flag) { %>
+<div class="icon_birthday"></div>
+<% } %>
+<% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
+<% if(idol_detail.show_card_type == "l_premium") { %>
+<a id="btn_normal_sign" class="js_btn_change_card_type"></a>
+<% } else { %>
+<a id="btn_premium_sign" class="js_btn_change_card_type"></a>
+<% } %>
+<% } %>
+</div>
+</div>
+</div>
+</script>
+        <script type="text/template" id="profile-template">
+            <section class="idolProfile deck m-Btm5">
+<div class="profile_top"></div>
+<div class="profile_content">
+<div class="profile_box detail_<%- data.attribute %>">
+<div class="data_list">
+<div class="title kana"></div><div class="pr"><%- profile.card_kana %></div>
+</div>
+<div class="data_list">
+<div class="blk">
+<div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
+</div>
+<div class="blk">
+<div class="title age"></div><div class="pr"><%- profile.card_age %>세</div>
+</div>
+</div>
+<div class="data_list">
+<div class="blk">
+<div class="title wgt"></div>
+<div class="pr wgt">
+<%- profile.card_weight %>
+<% if ( /[0-9.]/.test(profile.card_weight) ) { %>
+kg
+<% } %>
+</div>
+</div>
+<div class="blk">
+<div class="title size"></div><div class="pr size"><%- profile.card_bust %>/<%- profile.card_waist %>/<%- profile.card_hip %></div>
+</div>
+</div>
+<div class="data_list">
+<div class="blk">
+<div class="title bd"></div><div class="pr"><%- profile.card_birthday %></div>
+</div>
+<div class="blk">
+<div class="title cns"></div><div class="pr cns"><%- profile.card_constellation %></div>
+</div>
+</div>
+<div class="data_list">
+<div class="blk">
+<div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
+</div>
+<div class="blk">
+<div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
+</div>
+</div>
+<div class="data_list">
+<div class="title from"></div><div class="pr"><%- profile.card_from %></div>
+</div>
+<div class="data_list">
+<div class="title hby"></div><div class="pr hby"><%- profile.card_hobby %></div>
+</div>
+<% if (profile.card_cv) { %> 
+<div class="data_list">
+<div class="title cv"></div><div class="pr"><%- profile.card_cv %></div>
+</div>
+<% } %>
+</div>
+</div>
+<div class="profile_bottom"></div>
+</section>
+</script>
+        <script type="text/template" id="comment-template">
+            <div class="selectArea type_02 m-Btm8">
+<% Object.keys(filtered_comments).forEach(function (key) { %>
+<div class="selectArea_accordion">
+<div class="selectArea_accordion_title"><div><%- category_names[key] %></div></div>
+<div class="selectArea_accordion_body t-Lft">
+<div class="selectArea_accordion_body_inner">
+<% Object.keys(filtered_comments[key]).forEach(function (key4) { %>
+<div class="comment_title_<%- data.attribute %>"><%- type_names[key4] %></div>
+<div class="comment_frame_wrapper_<%- data.attribute %> m-Btm8">
+<% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %>
+<% var attribute = data.attribute %>
+<% if(voice[key2]) { %>
+<div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>">
+<div><%- filtered_comments[key][key4][key2] %></div>
+<% if(voice_enable) { %>
+<a class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_02" id="jsBtnIdolVoice<%= key2 %>"  data-voice-key="<%- key2 %>"><div></div></a>
+<% } else { %>
+<div class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_03">
+</div>
+<% } %>
+</div>
+<% } else { %>
+<div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>">
+<div><%- filtered_comments[key][key4][key2] %></div>
+<% if(comments[key2] != "???") { %>
+<div class="star_<%- attribute %>"></div>
+<% } %>
+</div>
+<% } %>
+<% }); %>
+</div>
+<% }); %>
+</div>
+</div>
+</div>
+<% }); %>
+</div>
+</script>
+        <script type="text/template" id="story-template">
+            <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %>
+<% val = idol_story_list[i] %>
+<% if(val == undefined) { %>
+<% continue; %>
+<% } %>
+<div class="area-frame_common _hd_blue _bd_black m-Btm10">
+    <div class="area-frame_wrap">
+        <h3 class="area-frame_header">
+            <div class="area-frame_title" style="font-size:14px;"><%- val.story_title %></div>
+        </h3>
+<div style="width:280px; margin:0 auto; padding:10px 0 0; overflow:hidden;">
+<ul class="displayBox t-Cnt">
+<% Object.keys(val.icon).forEach(function (key2) { %>
+<% total = Object.keys(val.icon).length; %>
+<% val2 = val.icon[key2] %>
+<% if (+val.open_flag[key2]) { %>
+<li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>">
+<form method="post" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
+<input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br>
+<% if (+val.voice_enable[key2]) { %>
+<input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } else { %>
+<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } %>
+<% if (val.story_id > 0 && +val.voice_enable[key2]) { %><input type="hidden" name="voice" value="0"><% } %>
+</form>
+<% if (+val.voice_enable[key2]) { %>
+<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+<a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
+<div style="text-align:center; height:45px; margin:10px 0 5px;">
+<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_voicepage.jpg%3Fv%3D20170222083838" width="84"><br>
+</div>
+</a>
+<% } %>
+<% } %>
+</li>
+<% } else { %>
+<li style="<% if (total == 2) { %> width:50%; <% } else if (total == 3) { %> width:33%;<% } else { %>margin:0 5px;<% } %>">
+<div style="height:90px;">
+<img src="<%- val2 %>" height="75"><br>
+<% if (+val.voice_enable[key2]) { %>
+<input class="movie_name" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } else { %>
+<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } %>
+</div>
+<% if (+val.voice_enable[key2]) { %>
+<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+<div style="text-align:center; height:45px; margin:10px 0 5px;">
+<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_voicepage_gray.jpg%3Fv%3D20170222083838" width="84"><br>
+</div>
+<% } %>
+<% } %>
+</li>
+<% } %>
+<% last = key2; %>
+<% }); %>
+</ul>
+<% if (!ios_app_flg || !apple_review) { %>
+<% if (val.story_id > 0 && +val.voice_enable[last]) { %>
+<div class="checkForm ep_off" style="margin-top:0;margin-bottom:0">
+에피소드에서 보이스를 재생
+</div>
+<% } %>
+<% } %>
+</div>
+        <div class="area-frame_bg_image"></div>
+    </div>
+</div>
+<% } %>
+<% if (paging_info.max_page_num > 0) { %>
+<div class="pager_area" style="height:auto;">
+<div class="pager_panel_area">
+<% if (paging_info.current_page != 0) { %>
+<input type="submit" class="btn_pager_first">
+<% } else { %>
+<div class="btn_pager_first _disabled"></div>
+<% } %>
+<% if (paging_info.current_page > 0) { %>
+<input type="submit" class="btn_pager_back">
+<% } else { %>
+<div class="btn_pager_back _disabled"></div>
+<% } %>
+<% if (paging_info.current_page != paging_info.max_page_num) { %>
+<input type="submit" class="btn_pager_next">
+<% } else { %>
+<div class="btn_pager_next _disabled"></div>
+<% } %>
+<% if (paging_info.current_page != paging_info.max_page_num) { %>
+<input type="submit" class="btn_pager_last">
+<% } else { %>
+<div class="btn_pager_last _disabled"></div>
+<% } %>
+<%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %>
+</div>
+</div>
+<% } %>
+</script>
+        <script type="text/template" id="parameter-template">
+            <section class="idolStatus deck m-Btm10">
+<div class="data_list">
+<div class="wrap">
+<div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div>
+</div>
+<div class="wrap" style="margin-left:4px;">
+<div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div>
+</div>
+<div class="wrap" style="margin-left:4px;">
+<div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div>
+</div>
+</div>
+<% if (data.skill_effect) { %>
+<div class="data_list line">
+<div class="wrap">
+<div class="title skl"></div><div class="pr"><%- data.skill_name %></div>
+</div>
+</div>
+<%if (!data.grow_idol_flag) { %>
+<div class="data_list line">
+<div class="wrap">
+<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div>
+</div>
+</div>
+<%if ( ! $.isEmptyObject(data.skill_effect_2)) { %>
+<div class="data_list line">
+<div class="wrap">
+<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
+</div>
+</div>
+<% } %>
+<% } %>
+<% } %>
+</section>
+<% if(trade_prohibition.is_trade_limit) { %>
+<div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
+이 아이돌은 트레이드, 프리 트레이드, 선물을 할 수 없습니다.
+</div>
+<% } %>
+<div class="area-btn-common _base-width">
+<% if(!trade_prohibition.is_trade_limit) { %>
+<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">프리 트레이드 검색</a>
+<% } %>
+<% if(is_exist_archive) { %>
+<a href="https://starlight.kirara.ca/char/126" class="btn_normal_line_2" style="font-size:12px">앨범</a>
+<% } %>
+</div>
+<% if (event) { %>
+<h3 class="title_hanyo m-Top8 m-Btm8">
+<div>등장 이벤트</div>
+</h3>
+<% Object.keys(event).forEach(function (key) { %>
+<div class="t-Cnt m-Btm5">
+<% if (event[key].event_name.indexOf("<br />") != -1) { %>
+<%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
+<%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
+<% } else if (key == 1908) { %>
+<span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
+<% } else { %>
+<%- event[key].event_name %>
+<% } %>
+</div>
+<div class="area-btn-common _base-width m-Btm8">
+<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
+<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
+</div>
+<% }); %>
+<% } %>
+</script>
+        <script type="text/template" id="popup-expansion-template">
+            <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
+    <div class="js_current rotate_img" <% if(idol_image_mask_l_p || idol_image_mask_l) { %>twinkle="1"<% } %> style="width:100%">
+    <img id="expansion_idol_image" class="js_replace_premium " src='<%- idol_image %>' style="width:100%;" />
+    </div>
+    <% if(idol_image_nosign) { %>
+    <img id="expansion_idol_image_nosign" class="rotate_img" src='<%- idol_image_nosign %>' style="width:100%;" />
+    <% } %>
+       <% if(idol_image_noframe) { %>
+    <img id="expansion_idol_image_noframe" class="rotate_img" src='<%- idol_image_noframe %>' style="width:100%;" />
+    <% } %>
+        <div class="mask01 cardFrame01">
+            <div class="mask02 cardFrame02"></div>
+        </div>
+    </div>
+</script>
+        <style type='text/css'>
+            .rotate_appear {
+                -webkit-animation-name: anime1b;
+                -webkit-animation-duration: 200ms;
+                -webkit-animation-timing-function: ease-out;
+                -webkit-animation-fill-mode: forwards;
+            }
+
+            .rotate_disappear {
+                -webkit-animation-name: anime1;
+                -webkit-animation-duration: 200ms;
+                -webkit-animation-timing-function: ease-out;
+                -webkit-animation-fill-mode: forwards;
+            }
+
+            @-webkit-keyframes anime1 {
+                from {
+                    -webkit-transform: scale(1, 1);
+                    transform: scale(1, 1);
+                }
+
+                50% {
+                    -webkit-transform: scale(0.5, 1);
+                    transform: scale(0.5, 1);
+                }
+
+                to {
+                    -webkit-transform: scale(0, 1);
+                    transform: scale(0, 1);
+                }
+            }
+
+            @-webkit-keyframes anime1b {
+                from {
+                    -webkit-transform: scale(0, 1);
+                    transform: scale(0, 1);
+                }
+
+                50% {
+                    -webkit-transform: scale(0.5, 1);
+                    transform: scale(0.5, 1);
+                }
+
+                to {
+                    -webkit-transform: scale(1, 1);
+                    transform: scale(1, 1);
+                }
+            }
+
+            .card_rotate {
+                -webkit-user-select: none;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+
+            .card_img {
+                position: absolute;
+            }
+        </style>
+        <style type="text/css">
+            .cardSize_l {
+                width: 320px;
+                height: 400px;
+            }
+
+            .cardSize_l .card_img {
+                position: absolute;
+            }
+
+            .mask01 {
+                -webkit-mask-size: 304px 380px;
+            }
+
+            .mask02 {
+                -webkit-mask-size: 304px 380px;
+                -webkit-transition: background-position 0.1s linear;
+            }
+
+            .cardFrame01 {
+                width: 304px;
+                height: 380px;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                background-size: 304px 380px;
+            }
+
+            .cardFrame02 {
+                width: 304px;
+                height: 380px;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                background: url('http://125.6.169.35/idolmaster/image_sp/ui/rich/effect/card_effect_01.png') center center;
+                background-size: 608px 506px;
+            }
+        </style>
+        <script type="text/javascript">
+            (function() {
+                var idol = {};
+                idol.detail_list = [{
+                    "data": {
+                        "card_name": "미야모토 프레데리카",
+                        "rarity": "1",
+                        "cost": "1627",
+                        "attribute": "cute",
+                        "skill_name": "소악마 키스",
+                        "skill_effect": "11초마다 저확률로 잠깐 동안, PERFECT일때 라이프 2회복",
+                        "grow_idol_flag": "",
+                        "default_attack": "1649",
+                        "default_defense": "1631",
+                        "hash_card_id": "1593bfefaa649ce28d0b586bbcee2c81",
+                        "alias_name": "",
+                        "real_name": "미야모토 프레데리카"
+                    },
+                    "profile": {
+                        "card_id": "1200501",
+                        "card_name": "미야모토 프레데리카",
+                        "card_kana": "미야모토 프레데리카",
+                        "card_age": "19",
+                        "card_from": "파리",
+                        "card_height": "164",
+                        "card_weight": "46",
+                        "card_bust": "83",
+                        "card_waist": "57",
+                        "card_hip": "85",
+                        "card_birthday": "2월14일",
+                        "card_constellation": "물병자리",
+                        "card_blood": "B",
+                        "card_arm": "왼손",
+                        "card_hobby": "패션",
+                        "card_cv": "타카노 아사미"
+                    },
+                    "comments": {
+                        "mltd_a1": "오오, 대단해-! 직접 그린거긴 하지만, 누군지 잘 알겠는걸~! 자자 미야쨩, 손, 손을……! 터치♪ 해냈네!",
+                        "mltd_a2": "어느쪽이 진짜고, 어느쪽이 거짓일까? 즐거웠다면, 어디든 상관없겠지♪ 극장에 놀러온 여러분, 우리와 함께, 이상해져버려!",
+                        "mltd_a3": "안녕~! 클리어·레이지와, 레이지·스카이에요~♪ 잘 부탁해요~!",
+                        "mltd_ag1": "그건, 모르려나~",
+                        "mltd_ag2": "그림으로 치면, 아마 이런 느낌!",
+                        "mltd_ag3": "알기 쉽게 지지는 않을거야~!",
+                        "mltd_ag4": "흐흥~♪ 모르더라도 알것같고. 알게되면, 모르겠어♪",
+                        "mltd_ag5": "그게 레이지·레이지의 레이지 담당! 진심은, 어딘가에 두고 와버렸어♪",
+                        "mltd_ag6": "그럼, 깜짝 놀랄만한 스테이지를 팬들에게 보여주러 가볼까♪",
+                        "mltd_g1": "안녕-! 오늘도 기운차게 빈둥빈둥데리카. 오늘의 빈둥데리카는, 765프로 라이브 극장이야~.",
+                        "mltd_g2": "자신들의 극장이 있다니, 좋네-! 후레쨩 극장으로 개명 안할래? 해도 괜찮아!",
+                        "mltd_g3": "ㅇㅇㅇ프로듀서도, 후레쨩의 미소에 트레비앙 해버렸어?",
+                        "mltd_c1": "후레쨩의 패션쇼, 시작이야 시작~!",
+                        "mltd_c2": "null",
+                        "mltd_c3": "흥흥흐흥~♪ 후레후레후레데리카~♪",
+                        "mltd_c4": "null",
+                        "mltd_u1": "흥흥흐흥-흥흐흥-♪",
+                        "mltd_u2": "엘레데리카-♪",
+                        "mltd_u3": "null",
+                        "mltd_u4": "null",
+                        "mltd_u5": "null",
+                        "mltd_u6": "null",
+                        "mltd_u7": "null",
+                        "mltd_u8": "null",
+                        "mltd_u9": "null",
+                        "mltd_u10": "null",
+                        "mltd_u11": "null",
+                        "mltd_l1": "흥흥흥~, 가보자~♪",
+                        "mltd_l2": "최고 궁극 오랑제뜨~♪",
+                        "mltd_l3": "달콤하게 전해주는, 프레데리카♪",
+                        "mltd_l4": "수고했어~. 아, 즐거웠다~",
+                        "mltd_l5": "조금 실수했나? 뭐 괜찮아!",
+                        "mltd_l6": "null",
+                        "mltd_l7": "오케이, 좋은 느낌!",
+                        "mltd_l8": "흐흥~♪ 최고야, OK!",
+                        "mltd_l9": "null",
+                        "mltd_l10": "null",
+                        "mltd_l11": "null",
+                        "mltd_l12": "굉장하잖아! 열심히 했으니 상으로 뭔가 줄게♪",
+                        "mltd_d1": "오케이~ 레슨, 계속계속 할 수 있어~!",
+                        "mltd_d2": "null",
+                        "mltd_d3": "반짝이는 미소로, 팬들의 마음을 따뜻하게 해주는거야",
+                        "mltd_d4": "null",
+                        "mltd_d5": "아이돌마스터 밀리언 라이브 시어터 데이즈!"
+                    },
+                    "voice": {
+                        "mltd_a1": "sound/204xxx/card_list_204xxx0013_flavor_1_204xxx.wav",
+                        "mltd_a2": "sound/204xxx/card_list_204xxx0013_flavor_2_204xxx.wav",
+                        "mltd_a3": "sound/204xxx/card_list_204xxx0013_awake_204xxx.wav",
+                        "mltd_ag1": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge25_204xxx.wav",
+                        "mltd_ag2": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge50_204xxx.wav",
+                        "mltd_ag3": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge75_204xxx.wav",
+                        "mltd_ag4": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_1_204xxx.wav",
+                        "mltd_ag5": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_2_204xxx.wav",
+                        "mltd_ag6": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_3_204xxx.wav",
+                        "mltd_g1": "sound/204xxx/system_storyidol_204xxx_greeting_001_204xxx.wav",
+                        "mltd_g2": "sound/204xxx/system_storyidol_204xxx_greeting_002_204xxx.wav",
+                        "mltd_g3": "sound/204xxx/system_storyidol_204xxx_greetingsp_001_204xxx.wav",
+                        "mltd_c1": "sound/204xxx/system_room_204xxx_costume_appeal_001_204xxx.wav",
+                        "mltd_c2": "sound/204xxx/system_room_204xxx_costume_touch_001_204xxx.wav",
+                        "mltd_c3": "sound/204xxx/system_room_204xxx_costume_touch_002_204xxx.wav",
+                        "mltd_c4": "sound/204xxx/system_room_204xxx_costume_wait_001_204xxx.wav",
+                        "mltd_u1": "sound/204xxx/system_unique_204xxx_loop_020_204xxx.wav",
+                        "mltd_u2": "sound/204xxx/system_unique_204xxx_touch_018_204xxx.wav",
+                        "mltd_u3": "sound/204xxx/card_list_204xxx0013_contact_1_204xxx.wav",
+                        "mltd_u4": "sound/204xxx/card_list_204xxx0013_contact_2_204xxx.wav",
+                        "mltd_u5": "sound/204xxx/system_theater_204xxx_common_001_204xxx.wav",
+                        "mltd_u6": "sound/204xxx/system_theater_204xxx_common_004_204xxx.wav",
+                        "mltd_u7": "sound/204xxx/system_theater_204xxx_common_007_204xxx.wav",
+                        "mltd_u8": "sound/204xxx/system_theater_204xxx_touch_022_204xxx.wav",
+                        "mltd_u9": "sound/204xxx/system_theater_204xxx_touch_023_204xxx.wav",
+                        "mltd_u10": "sound/204xxx/system_theater_204xxx_touch_024_204xxx.wav",
+                        "mltd_u11": "sound/204xxx/system_theater_204xxx_touch_025_204xxx.wav",
+                        "mltd_l1": "sound/204xxx/system_live_204xxx_start_center_204xxx.wav",
+                        "mltd_l2": "sound/204xxx/system_live_204xxx_result_score_001_204xxx.wav",
+                        "mltd_l3": "sound/204xxx/system_live_204xxx_result_score_002_204xxx.wav",
+                        "mltd_l4": "sound/204xxx/system_live_204xxx_result_score_003_204xxx.wav",
+                        "mltd_l5": "sound/204xxx/system_live_204xxx_result_score_004_204xxx.wav",
+                        "mltd_l6": "sound/204xxx/system_live_204xxx_result_stamp_score_001_204xxx.wav",
+                        "mltd_l7": "sound/204xxx/system_live_204xxx_result_stamp_score_002_204xxx.wav",
+                        "mltd_l8": "sound/204xxx/system_live_204xxx_result_stamp_combo_001_204xxx.wav",
+                        "mltd_l9": "sound/204xxx/system_live_204xxx_result_stamp_combo_002_204xxx.wav",
+                        "mltd_l10": "sound/204xxx/system_live_204xxx_result_stamp_times_001_204xxx.wav",
+                        "mltd_l11": "sound/204xxx/system_live_204xxx_result_stamp_times_002_204xxx.wav",
+                        "mltd_l12": "sound/204xxx/system_live_204xxx_result_rankup_204xxx.wav",
+                        "mltd_d1": "sound/204xxx/system_lesson_204xxx_success_001_204xxx.wav",
+                        "mltd_d2": "sound/204xxx/system_lesson_204xxx_success_002_204xxx.wav",
+                        "mltd_d3": "sound/204xxx/system_lesson_204xxx_sr_master_204xxx.wav",
+                        "mltd_d4": "sound/204xxx/system_lesson_204xxx_sr_master_max_204xxx.wav",
+                        "mltd_d5": "sound/204xxx/system_other_204xxx_titlecall_204xxx.wav"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%BF%E3%82%84%E3%82%82%E3%81%A8%E3%81%B5%E3%82%8C%E3%81%A7%E3%82%8A%E3%81%8B",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "0"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }, {
+                    "data": {
+                        "card_name": "미야모토 프레데리카+",
+                        "rarity": "2",
+                        "cost": "2041",
+                        "attribute": "cute",
+                        "skill_name": "소악마 키스",
+                        "skill_effect": "11초마다 저확률로 잠깐 동안, PERFECT일때 라이프 2회복",
+                        "grow_idol_flag": "",
+                        "default_attack": "2068",
+                        "default_defense": "2046",
+                        "hash_card_id": "f80b6b94319b514fc4da98bd63edf140",
+                        "alias_name": "",
+                        "real_name": "미야모토 프레데리카+"
+                    },
+                    "profile": {
+                        "card_id": "1300502",
+                        "card_name": "미야모토 프레데리카+",
+                        "card_kana": "미야모토 프레데리카",
+                        "card_age": "19",
+                        "card_from": "파리",
+                        "card_height": "164",
+                        "card_weight": "46",
+                        "card_bust": "83",
+                        "card_waist": "57",
+                        "card_hip": "85",
+                        "card_birthday": "2월14일",
+                        "card_constellation": "물병자리",
+                        "card_blood": "B",
+                        "card_arm": "왼손",
+                        "card_hobby": "패션",
+                        "card_cv": "타카노 아사미"
+                    },
+                    "comments": {
+                        "mltd_a1": "오오, 대단해-! 직접 그린거긴 하지만, 누군지 잘 알겠는걸~! 자자 미야쨩, 손, 손을……! 터치♪ 해냈네!",
+                        "mltd_a2": "어느쪽이 진짜고, 어느쪽이 거짓일까? 즐거웠다면, 어디든 상관없겠지♪ 극장에 놀러온 여러분, 우리와 함께, 이상해져버려!",
+                        "mltd_a3": "안녕~! 클리어·레이지와, 레이지·스카이에요~♪ 잘 부탁해요~!",
+                        "mltd_ag1": "그건, 모르려나~",
+                        "mltd_ag2": "그림으로 치면, 아마 이런 느낌!",
+                        "mltd_ag3": "알기 쉽게 지지는 않을거야~!",
+                        "mltd_ag4": "흐흥~♪ 모르더라도 알것같고. 알게되면, 모르겠어♪",
+                        "mltd_ag5": "그게 레이지·레이지의 레이지 담당! 진심은, 어딘가에 두고 와버렸어♪",
+                        "mltd_ag6": "그럼, 깜짝 놀랄만한 스테이지를 팬들에게 보여주러 가볼까♪",
+                        "mltd_g1": "안녕-! 오늘도 기운차게 빈둥빈둥데리카. 오늘의 빈둥데리카는, 765프로 라이브 극장이야~.",
+                        "mltd_g2": "자신들의 극장이 있다니, 좋네-! 후레쨩 극장으로 개명 안할래? 해도 괜찮아!",
+                        "mltd_g3": "ㅇㅇㅇ프로듀서도, 후레쨩의 미소에 트레비앙 해버렸어?",
+                        "mltd_c1": "후레쨩의 패션쇼, 시작이야 시작~!",
+                        "mltd_c2": "null",
+                        "mltd_c3": "흥흥흐흥~♪ 후레후레후레데리카~♪",
+                        "mltd_c4": "null",
+                        "mltd_u1": "흥흥흐흥-흥흐흥-♪",
+                        "mltd_u2": "엘레데리카-♪",
+                        "mltd_u3": "null",
+                        "mltd_u4": "null",
+                        "mltd_u5": "null",
+                        "mltd_u6": "null",
+                        "mltd_u7": "null",
+                        "mltd_u8": "null",
+                        "mltd_u9": "null",
+                        "mltd_u10": "null",
+                        "mltd_u11": "null",
+                        "mltd_l1": "흥흥흥~, 가보자~♪",
+                        "mltd_l2": "최고 궁극 오랑제뜨~♪",
+                        "mltd_l3": "달콤하게 전해주는, 프레데리카♪",
+                        "mltd_l4": "수고했어~. 아, 즐거웠다~",
+                        "mltd_l5": "조금 실수했나? 뭐 괜찮아!",
+                        "mltd_l6": "null",
+                        "mltd_l7": "오케이, 좋은 느낌!",
+                        "mltd_l8": "흐흥~♪ 최고야, OK!",
+                        "mltd_l9": "null",
+                        "mltd_l10": "null",
+                        "mltd_l11": "null",
+                        "mltd_l12": "굉장하잖아! 열심히 했으니 상으로 뭔가 줄게♪",
+                        "mltd_d1": "오케이~ 레슨, 계속계속 할 수 있어~!",
+                        "mltd_d2": "null",
+                        "mltd_d3": "반짝이는 미소로, 팬들의 마음을 따뜻하게 해주는거야",
+                        "mltd_d4": "null",
+                        "mltd_d5": "아이돌마스터 밀리언 라이브 시어터 데이즈!"
+                    },
+                    "voice": {
+                        "mltd_a1": "sound/204xxx/card_list_204xxx0013_flavor_1_204xxx.wav",
+                        "mltd_a2": "sound/204xxx/card_list_204xxx0013_flavor_2_204xxx.wav",
+                        "mltd_a3": "sound/204xxx/card_list_204xxx0013_awake_204xxx.wav",
+                        "mltd_ag1": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge25_204xxx.wav",
+                        "mltd_ag2": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge50_204xxx.wav",
+                        "mltd_ag3": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge75_204xxx.wav",
+                        "mltd_ag4": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_1_204xxx.wav",
+                        "mltd_ag5": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_2_204xxx.wav",
+                        "mltd_ag6": "sound/204xxx/system_live_204xxx_result_sr_awake_gauge100_3_204xxx.wav",
+                        "mltd_g1": "sound/204xxx/system_storyidol_204xxx_greeting_001_204xxx.wav",
+                        "mltd_g2": "sound/204xxx/system_storyidol_204xxx_greeting_002_204xxx.wav",
+                        "mltd_g3": "sound/204xxx/system_storyidol_204xxx_greetingsp_001_204xxx.wav",
+                        "mltd_c1": "sound/204xxx/system_room_204xxx_costume_appeal_001_204xxx.wav",
+                        "mltd_c2": "sound/204xxx/system_room_204xxx_costume_touch_001_204xxx.wav",
+                        "mltd_c3": "sound/204xxx/system_room_204xxx_costume_touch_002_204xxx.wav",
+                        "mltd_c4": "sound/204xxx/system_room_204xxx_costume_wait_001_204xxx.wav",
+                        "mltd_u1": "sound/204xxx/system_unique_204xxx_loop_020_204xxx.wav",
+                        "mltd_u2": "sound/204xxx/system_unique_204xxx_touch_018_204xxx.wav",
+                        "mltd_u3": "sound/204xxx/card_list_204xxx0013_contact_1_204xxx.wav",
+                        "mltd_u4": "sound/204xxx/card_list_204xxx0013_contact_2_204xxx.wav",
+                        "mltd_u5": "sound/204xxx/system_theater_204xxx_common_001_204xxx.wav",
+                        "mltd_u6": "sound/204xxx/system_theater_204xxx_common_004_204xxx.wav",
+                        "mltd_u7": "sound/204xxx/system_theater_204xxx_common_007_204xxx.wav",
+                        "mltd_u8": "sound/204xxx/system_theater_204xxx_touch_022_204xxx.wav",
+                        "mltd_u9": "sound/204xxx/system_theater_204xxx_touch_023_204xxx.wav",
+                        "mltd_u10": "sound/204xxx/system_theater_204xxx_touch_024_204xxx.wav",
+                        "mltd_u11": "sound/204xxx/system_theater_204xxx_touch_025_204xxx.wav",
+                        "mltd_l1": "sound/204xxx/system_live_204xxx_start_center_204xxx.wav",
+                        "mltd_l2": "sound/204xxx/system_live_204xxx_result_score_001_204xxx.wav",
+                        "mltd_l3": "sound/204xxx/system_live_204xxx_result_score_002_204xxx.wav",
+                        "mltd_l4": "sound/204xxx/system_live_204xxx_result_score_003_204xxx.wav",
+                        "mltd_l5": "sound/204xxx/system_live_204xxx_result_score_004_204xxx.wav",
+                        "mltd_l6": "sound/204xxx/system_live_204xxx_result_stamp_score_001_204xxx.wav",
+                        "mltd_l7": "sound/204xxx/system_live_204xxx_result_stamp_score_002_204xxx.wav",
+                        "mltd_l8": "sound/204xxx/system_live_204xxx_result_stamp_combo_001_204xxx.wav",
+                        "mltd_l9": "sound/204xxx/system_live_204xxx_result_stamp_combo_002_204xxx.wav",
+                        "mltd_l10": "sound/204xxx/system_live_204xxx_result_stamp_times_001_204xxx.wav",
+                        "mltd_l11": "sound/204xxx/system_live_204xxx_result_stamp_times_002_204xxx.wav",
+                        "mltd_l12": "sound/204xxx/system_live_204xxx_result_rankup_204xxx.wav",
+                        "mltd_d1": "sound/204xxx/system_lesson_204xxx_success_001_204xxx.wav",
+                        "mltd_d2": "sound/204xxx/system_lesson_204xxx_success_002_204xxx.wav",
+                        "mltd_d3": "sound/204xxx/system_lesson_204xxx_sr_master_204xxx.wav",
+                        "mltd_d4": "sound/204xxx/system_lesson_204xxx_sr_master_max_204xxx.wav",
+                        "mltd_d5": "sound/204xxx/system_other_204xxx_titlecall_204xxx.wav"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%BF%E3%82%84%E3%82%82%E3%81%A8%E3%81%B5%E3%82%8C%E3%81%A7%E3%82%8A%E3%81%8B",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "0"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }, {
+                        "card_name": "이치노세 시키",
+                        "rarity": "1",
+                        "cost": "1229",
+                        "attribute": "cute",
+                        "skill_name": "\uff77\uff6d\uff70\uff83\uff68\uff71\uff78\uff84",
+                        "skill_effect": "",
+                        "grow_idol_flag": "",
+                        "default_attack": "1240",
+                        "default_defense": "1301",
+                        "hash_card_id": "dad249d2193e48fede1efb6b86ce152f",
+                        "alias_name": "",
+                        "real_name": "이치노세 시키"
+                    },
+                    "profile": {
+                        "card_id": "1002901",
+                        "card_name": "이치노세 시키",
+                        "card_kana": "이치노세 시키",
+                        "card_age": "18",
+                        "card_from": "이와테",
+                        "card_height": "161",
+                        "card_weight": "43",
+                        "card_bust": "83",
+                        "card_waist": "57",
+                        "card_hip": "82",
+                        "card_birthday": "5월 30일",
+                        "card_constellation": "쌍둥이자리",
+                        "card_blood": "O",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "관찰·수상한 과학실험·실종",
+                        "card_cv": "아이하라 코토미"
+                    },
+                    "comments": {
+                        "mltd_a1": "흐흥-, 이게 양손의 꽃이란거네♪ 킁킁킁……이쪽 꽃은, 양지의 냄새! 그리고, 이쪽은……와오, 향기의 포화상태~! 흥미로운걸~, 킁킁!",
+                        "mltd_a2": "null",
+                        "mltd_a3": "우리들의 실험, 결과는……? 만원의 객석! 후후후, 대성공이네♪",
+                        "mltd_ag1": "이거야 이거, 이걸 갖고 싶었어",
+                        "mltd_ag2": "봐봐, 조금씩 변해갈거야",
+                        "mltd_ag3": "이 새로운 냄새를 섞으면, 어떨까나?",
+                        "mltd_ag4": "null",
+                        "mltd_ag5": "null",
+                        "mltd_ag6": "null",
+                        "mltd_g1": "킁킁…뭐야뭐야! 굉장히 재미있는 냄새를 가진 사람이, 근처에 있어~!",
+                        "mltd_g2": "잘 부탁해~♪ 아, 친화성 테스트 해볼래? 그럼 우선은~……자, 악수♪",
+                        "mltd_g3": "ㅇㅇㅇ프로듀서, 우리 프로듀서랑 콜라보 하지 않을래? 재미있는 반응이 일어날 것 같아!",
+                        "mltd_c1": "시각효과의 향상과, 흥분에 대해서. 자아, 실험개시~♪",
+                        "mltd_c2": "null",
+                        "mltd_c3": "머리의 미끈함은, 찰랑찰랑-. 약품은 아니라구?",
+                        "mltd_c4": "재미없어-! 제대로 반응해주라구-.",
+                        "mltd_u1": "시키쨩, 이런거 특기였나봐♪ 아, 머리카락 한 올 받아가도 될까?",
+                        "mltd_u2": "null",
+                        "mltd_u3": "null",
+                        "mltd_u4": "null",
+                        "mltd_u5": "null",
+                        "mltd_u6": "null",
+                        "mltd_u7": "null",
+                        "mltd_u8": "null",
+                        "mltd_u9": "null",
+                        "mltd_u10": "null",
+                        "mltd_l1": "시키쨩, 투입-. 실험개시~♪",
+                        "mltd_l2": "나와 너로, So, Perfect♪",
+                        "mltd_l3": "검증결과는~, 대충 good! 짝짝짝~",
+                        "mltd_l4": "단위는 산출되었어-. 팬들이 좋다고 하면, 그걸로 됐어!",
+                        "mltd_l5": "시키쨩 미묘-, 재미없엇!",
+                        "mltd_l6": "null",
+                        "mltd_l7": "실험종료-. 모두 멋지게 분비하고 있네~♪",
+                        "mltd_l8": "소리의 연쇄 반응, 대성공~♪",
+                        "mltd_l9": "null",
+                        "mltd_l10": "null",
+                        "mltd_l11": "null",
+                        "mltd_l12": "앗, 프로듀서, 다른 생명체로 진화했어~?",
+                        "mltd_d1": "으~응, 시키쨩, 아이돌로 변태-",
+                        "mltd_d2": "null",
+                        "mltd_d3": "머리에 찌릿찌릿~, 슈퍼트립~",
+                        "mltd_d4": "null",
+                        "mltd_d5": "아이돌마스터 밀리언 라이브 시어터 데이즈!"
+                    },
+                    "voice": {
+                        "mltd_a1": "sound/205xxx/card_list_205xxx0013_flavor_1_205xxx.wav",
+                        "mltd_a2": "sound/205xxx/card_list_205xxx0013_flavor_2_205xxx.wav",
+                        "mltd_a3": "sound/205xxx/card_list_205xxx0013_awake_205xxx.wav",
+                        "mltd_ag1": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge25_205xxx.wav",
+                        "mltd_ag2": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge50_205xxx.wav",
+                        "mltd_ag3": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge75_205xxx.wav",
+                        "mltd_ag4": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_1_205xxx.wav",
+                        "mltd_ag5": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_2_205xxx.wav",
+                        "mltd_ag6": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_3_205xxx.wav",
+                        "mltd_g1": "sound/205xxx/system_storyidol_205xxx_greeting_001_205xxx.wav",
+                        "mltd_g2": "sound/205xxx/system_storyidol_205xxx_greeting_002_205xxx.wav",
+                        "mltd_g3": "sound/205xxx/system_storyidol_205xxx_greetingsp_001_205xxx.wav",
+                        "mltd_c1": "sound/205xxx/system_room_205xxx_costume_appeal_001_205xxx.wav",
+                        "mltd_c2": "sound/205xxx/system_room_205xxx_costume_touch_001_205xxx.wav",
+                        "mltd_c3": "sound/205xxx/system_room_205xxx_costume_touch_002_205xxx.wav",
+                        "mltd_c4": "sound/205xxx/system_room_205xxx_costume_wait_001_205xxx.wav",
+                        "mltd_u1": "sound/205xxx/system_unique_205xxx_touch_018_205xxx.wav",
+                        "mltd_u2": "sound/205xxx/card_list_205xxx0013_contact_1_205xxx.wav",
+                        "mltd_u3": "sound/205xxx/card_list_205xxx0013_contact_2_205xxx.wav",
+                        "mltd_u4": "sound/205xxx/system_theater_205xxx_common_001_205xxx.wav",
+                        "mltd_u5": "sound/205xxx/system_theater_205xxx_common_004_205xxx.wav",
+                        "mltd_u6": "sound/205xxx/system_theater_205xxx_common_007_205xxx.wav",
+                        "mltd_u7": "sound/205xxx/system_theater_205xxx_touch_022_205xxx.wav",
+                        "mltd_u8": "sound/205xxx/system_theater_205xxx_touch_023_205xxx.wav",
+                        "mltd_u9": "sound/205xxx/system_theater_205xxx_touch_024_205xxx.wav",
+                        "mltd_u10": "sound/205xxx/system_theater_205xxx_touch_025_205xxx.wav",
+                        "mltd_l1": "sound/205xxx/system_live_205xxx_start_center_205xxx.wav",
+                        "mltd_l2": "sound/205xxx/system_live_205xxx_result_score_001_205xxx.wav",
+                        "mltd_l3": "sound/205xxx/system_live_205xxx_result_score_002_205xxx.wav",
+                        "mltd_l4": "sound/205xxx/system_live_205xxx_result_score_003_205xxx.wav",
+                        "mltd_l5": "sound/205xxx/system_live_205xxx_result_score_004_205xxx.wav",
+                        "mltd_l6": "sound/205xxx/system_live_205xxx_result_stamp_score_001_205xxx.wav",
+                        "mltd_l7": "sound/205xxx/system_live_205xxx_result_stamp_score_002_205xxx.wav",
+                        "mltd_l8": "sound/205xxx/system_live_205xxx_result_stamp_combo_001_205xxx.wav",
+                        "mltd_l9": "sound/205xxx/system_live_205xxx_result_stamp_combo_002_205xxx.wav",
+                        "mltd_l10": "sound/205xxx/system_live_205xxx_result_stamp_times_001_205xxx.wav",
+                        "mltd_l11": "sound/205xxx/system_live_205xxx_result_stamp_times_002_205xxx.wav",
+                        "mltd_l12": "sound/205xxx/system_live_205xxx_result_rankup_205xxx.wav",
+                        "mltd_d1": "sound/205xxx/system_lesson_205xxx_success_001_205xxx.wav",
+                        "mltd_d2": "sound/205xxx/system_lesson_205xxx_success_002_205xxx.wav",
+                        "mltd_d3": "sound/205xxx/system_lesson_205xxx_sr_master_205xxx.wav",
+                        "mltd_d4": "sound/205xxx/system_lesson_205xxx_sr_master_max_205xxx.wav",
+                        "mltd_d5": "sound/205xxx/system_other_205xxx_titlecall_205xxx.wav"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%84%E3%81%A1%E3%81%AE%E3%81%9B%E3%81%97%E3%81%8D",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "0"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }, {
+                    "data": {
+                        "card_name": "이치노세 시키+",
+                        "rarity": "2",
+                        "cost": "1492",
+                        "attribute": "cute",
+                        "skill_name": "\uff77\uff6d\uff70\uff83\uff68\uff71\uff78\uff84",
+                        "skill_effect": "",
+                        "grow_idol_flag": "",
+                        "default_attack": "1507",
+                        "default_defense": "1581",
+                        "hash_card_id": "b9e2f6db7e3b84a0319b31c875323c03",
+                        "alias_name": "",
+                        "real_name": "이치노세 시키+"
+                    },
+                    "profile": {
+                        "card_id": "1102902",
+                        "card_name": "이치노세 시키+",
+                        "card_kana": "이치노세 시키",
+                        "card_age": "18",
+                        "card_from": "이와테",
+                        "card_height": "161",
+                        "card_weight": "43",
+                        "card_bust": "83",
+                        "card_waist": "57",
+                        "card_hip": "82",
+                        "card_birthday": "5월 30일",
+                        "card_constellation": "쌍둥이자리",
+                        "card_blood": "O",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "관찰·수상한 과학실험·실종",
+                        "card_cv": "아이하라 코토미"
+                    },
+                    "comments": {
+                        "mltd_a1": "흐흥-, 이게 양손의 꽃이란거네♪ 킁킁킁……이쪽 꽃은, 양지의 냄새! 그리고, 이쪽은……와오, 향기의 포화상태~! 흥미로운걸~, 킁킁!",
+                        "mltd_a2": "null",
+                        "mltd_a3": "우리들의 실험, 결과는……? 만원의 객석! 후후후, 대성공이네♪",
+                        "mltd_ag1": "이거야 이거, 이걸 갖고 싶었어",
+                        "mltd_ag2": "봐봐, 조금씩 변해갈거야",
+                        "mltd_ag3": "이 새로운 냄새를 섞으면, 어떨까나?",
+                        "mltd_ag4": "null",
+                        "mltd_ag5": "null",
+                        "mltd_ag6": "null",
+                        "mltd_g1": "킁킁…뭐야뭐야! 굉장히 재미있는 냄새를 가진 사람이, 근처에 있어~!",
+                        "mltd_g2": "잘 부탁해~♪ 아, 친화성 테스트 해볼래? 그럼 우선은~……자, 악수♪",
+                        "mltd_g3": "ㅇㅇㅇ프로듀서, 우리 프로듀서랑 콜라보 하지 않을래? 재미있는 반응이 일어날 것 같아!",
+                        "mltd_c1": "시각효과의 향상과, 흥분에 대해서. 자아, 실험개시~♪",
+                        "mltd_c2": "null",
+                        "mltd_c3": "머리의 미끈함은, 찰랑찰랑-. 약품은 아니라구?",
+                        "mltd_c4": "재미없어-! 제대로 반응해주라구-.",
+                        "mltd_u1": "시키쨩, 이런거 특기였나봐♪ 아, 머리카락 한 올 받아가도 될까?",
+                        "mltd_u2": "null",
+                        "mltd_u3": "null",
+                        "mltd_u4": "null",
+                        "mltd_u5": "null",
+                        "mltd_u6": "null",
+                        "mltd_u7": "null",
+                        "mltd_u8": "null",
+                        "mltd_u9": "null",
+                        "mltd_u10": "null",
+                        "mltd_l1": "시키쨩, 투입-. 실험개시~♪",
+                        "mltd_l2": "나와 너로, So, Perfect♪",
+                        "mltd_l3": "검증결과는~, 대충 good! 짝짝짝~",
+                        "mltd_l4": "단위는 산출되었어-. 팬들이 좋다고 하면, 그걸로 됐어!",
+                        "mltd_l5": "시키쨩 미묘-, 재미없엇!",
+                        "mltd_l6": "null",
+                        "mltd_l7": "실험종료-. 모두 멋지게 분비하고 있네~♪",
+                        "mltd_l8": "소리의 연쇄 반응, 대성공~♪",
+                        "mltd_l9": "null",
+                        "mltd_l10": "null",
+                        "mltd_l11": "null",
+                        "mltd_l12": "앗, 프로듀서, 다른 생명체로 진화했어~?",
+                        "mltd_d1": "으~응, 시키쨩, 아이돌로 변태-",
+                        "mltd_d2": "null",
+                        "mltd_d3": "머리에 찌릿찌릿~, 슈퍼트립~",
+                        "mltd_d4": "null",
+                        "mltd_d5": "아이돌마스터 밀리언 라이브 시어터 데이즈!"
+                    },
+                    "voice": {
+                        "mltd_a1": "sound/205xxx/card_list_205xxx0013_flavor_1_205xxx.wav",
+                        "mltd_a2": "sound/205xxx/card_list_205xxx0013_flavor_2_205xxx.wav",
+                        "mltd_a3": "sound/205xxx/card_list_205xxx0013_awake_205xxx.wav",
+                        "mltd_ag1": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge25_205xxx.wav",
+                        "mltd_ag2": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge50_205xxx.wav",
+                        "mltd_ag3": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge75_205xxx.wav",
+                        "mltd_ag4": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_1_205xxx.wav",
+                        "mltd_ag5": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_2_205xxx.wav",
+                        "mltd_ag6": "sound/205xxx/system_live_205xxx_result_sr_awake_gauge100_3_205xxx.wav",
+                        "mltd_g1": "sound/205xxx/system_storyidol_205xxx_greeting_001_205xxx.wav",
+                        "mltd_g2": "sound/205xxx/system_storyidol_205xxx_greeting_002_205xxx.wav",
+                        "mltd_g3": "sound/205xxx/system_storyidol_205xxx_greetingsp_001_205xxx.wav",
+                        "mltd_c1": "sound/205xxx/system_room_205xxx_costume_appeal_001_205xxx.wav",
+                        "mltd_c2": "sound/205xxx/system_room_205xxx_costume_touch_001_205xxx.wav",
+                        "mltd_c3": "sound/205xxx/system_room_205xxx_costume_touch_002_205xxx.wav",
+                        "mltd_c4": "sound/205xxx/system_room_205xxx_costume_wait_001_205xxx.wav",
+                        "mltd_u1": "sound/205xxx/system_unique_205xxx_touch_018_205xxx.wav",
+                        "mltd_u2": "sound/205xxx/card_list_205xxx0013_contact_1_205xxx.wav",
+                        "mltd_u3": "sound/205xxx/card_list_205xxx0013_contact_2_205xxx.wav",
+                        "mltd_u4": "sound/205xxx/system_theater_205xxx_common_001_205xxx.wav",
+                        "mltd_u5": "sound/205xxx/system_theater_205xxx_common_004_205xxx.wav",
+                        "mltd_u6": "sound/205xxx/system_theater_205xxx_common_007_205xxx.wav",
+                        "mltd_u7": "sound/205xxx/system_theater_205xxx_touch_022_205xxx.wav",
+                        "mltd_u8": "sound/205xxx/system_theater_205xxx_touch_023_205xxx.wav",
+                        "mltd_u9": "sound/205xxx/system_theater_205xxx_touch_024_205xxx.wav",
+                        "mltd_u10": "sound/205xxx/system_theater_205xxx_touch_025_205xxx.wav",
+                        "mltd_l1": "sound/205xxx/system_live_205xxx_start_center_205xxx.wav",
+                        "mltd_l2": "sound/205xxx/system_live_205xxx_result_score_001_205xxx.wav",
+                        "mltd_l3": "sound/205xxx/system_live_205xxx_result_score_002_205xxx.wav",
+                        "mltd_l4": "sound/205xxx/system_live_205xxx_result_score_003_205xxx.wav",
+                        "mltd_l5": "sound/205xxx/system_live_205xxx_result_score_004_205xxx.wav",
+                        "mltd_l6": "sound/205xxx/system_live_205xxx_result_stamp_score_001_205xxx.wav",
+                        "mltd_l7": "sound/205xxx/system_live_205xxx_result_stamp_score_002_205xxx.wav",
+                        "mltd_l8": "sound/205xxx/system_live_205xxx_result_stamp_combo_001_205xxx.wav",
+                        "mltd_l9": "sound/205xxx/system_live_205xxx_result_stamp_combo_002_205xxx.wav",
+                        "mltd_l10": "sound/205xxx/system_live_205xxx_result_stamp_times_001_205xxx.wav",
+                        "mltd_l11": "sound/205xxx/system_live_205xxx_result_stamp_times_002_205xxx.wav",
+                        "mltd_l12": "sound/205xxx/system_live_205xxx_result_rankup_205xxx.wav",
+                        "mltd_d1": "sound/205xxx/system_lesson_205xxx_success_001_205xxx.wav",
+                        "mltd_d2": "sound/205xxx/system_lesson_205xxx_success_002_205xxx.wav",
+                        "mltd_d3": "sound/205xxx/system_lesson_205xxx_sr_master_205xxx.wav",
+                        "mltd_d4": "sound/205xxx/system_lesson_205xxx_sr_master_max_205xxx.wav",
+                        "mltd_d5": "sound/205xxx/system_other_205xxx_titlecall_205xxx.wav"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%84%E3%81%A1%E3%81%AE%E3%81%9B%E3%81%97%E3%81%8D",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "0"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }];
+
+                idol.idol_story_list = [{
+                    "story_id": "363",
+                    "story_title": "\u306f\u3058\u307e\u308a\u306e\u4e88\u611f\u266a\u3057\u3068\u3084\u304b\u590f\u82b1",
+                    "voice_enable": {
+                        "2": "1",
+                        "5": "1"
+                    },
+                    "flash_path": {
+                        "2": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F363%2F3%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D195575141",
+                        "5": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F363%2F6%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D831972079"
+                    },
+                    "voice_url": {
+                        "2": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F363%2F3%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D219637215",
+                        "5": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F363%2F6%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D81723821"
+                    },
+                    "open_flag": {
+                        "2": "1",
+                        "5": "1"
+                    },
+                    "icon": {
+                        "2": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fbase%2F031.jpg%3Fv%3D20101001000000",
+                        "5": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_363_6.jpg%3Fv%3D20190630144640"
+                    },
+                    "movie_name_voice": {
+                        "2": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_early.png%3Fv%3D20101001000000",
+                        "5": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_late.png%3Fv%3D20101001000000"
+                    }
+                }, {
+                    "story_id": "305",
+                    "story_title": "\u5929\u9ad8\u304f!\u8f1d\u3051\u79cb\u306e\u904b\u52d5\u4f1a",
+                    "voice_enable": {
+                        "2": "1",
+                        "5": "1"
+                    },
+                    "flash_path": {
+                        "2": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F305%2F3%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D277382947",
+                        "5": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F305%2F6%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D138526647"
+                    },
+                    "voice_url": {
+                        "2": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F305%2F3%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D26130141",
+                        "5": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F305%2F6%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D857096637"
+                    },
+                    "open_flag": {
+                        "2": "1",
+                        "5": "1"
+                    },
+                    "icon": {
+                        "2": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fbase%2F031.jpg%3Fv%3D20101001000000",
+                        "5": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_305_6.jpg%3Fv%3D20190524145750"
+                    },
+                    "movie_name_voice": {
+                        "2": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_early.png%3Fv%3D20101001000000",
+                        "5": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_late.png%3Fv%3D20101001000000"
+                    }
+                }, {
+                    "story_id": "269",
+                    "story_title": "\u30a2\u30a4\u30c9\u30eb\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9 \u51ac\u7a7a\u30b3\u30ec\u30af\u30b7\u30e7\u30f3 in \u30d1\u30ea",
+                    "voice_enable": ["1", "1"],
+                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F269%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D243779027", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F269%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D412404254"],
+                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F269%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D25293549", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F269%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D284403885"],
+                    "open_flag": ["1", "1"],
+                    "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_269_1.jpg%3Fv%3D20190524145749", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_269_2.jpg%3Fv%3D20190524145749"],
+                    "movie_name_voice": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_special.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_special_2.png%3Fv%3D20101001000000"]
+                }, {
+                    "story_id": "204",
+                    "story_title": "\u3075\u305f\u308a\u3067\u30a2\u30a4\u30c9\u30eb\u30c1\u30e3\u30ec\u30f3\u30b8 \u76ee\u6307\u305b\u30af\u30fc\u30eb\u306a\u30df\u30e5\u30fc\u30b8\u30c3\u30af\u30d3\u30c7\u30aa \u30ec\u30a4\u30b8\u30fc\u30fb\u30ec\u30a4\u30b8\u30fc",
+                    "voice_enable": ["0", "0", "0"],
+                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F204%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D208914852", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F204%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D607300995", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F204%2F3%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D721276035"],
+                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F204%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D109129127", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F204%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D814548889", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F204%2F3%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D156206063"],
+                    "open_flag": ["1", "1", "1"],
+                    "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_204_1.jpg%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_204_2.jpg%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_204_3.jpg%3Fv%3D20101001000000"],
+                    "movie_name": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_early.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_novelette.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_late.png%3Fv%3D20101001000000"]
+                }, {
+                    "story_id": "122",
+                    "story_title": "\u65b0\u6625\u3042\u3051\u304a\u3081\u632f\u8896",
+                    "voice_enable": ["0", "0"],
+                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F122%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D599922225", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F122%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D145979405"],
+                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F122%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D205424044", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F122%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D954488268"],
+                    "open_flag": ["1", "1"],
+                    "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_122_1.jpg%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_122_2.jpg%3Fv%3D20101001000000"],
+                    "movie_name": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_r_early.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_r_late.png%3Fv%3D20101001000000"]
+                }, {
+                    "story_id": "83",
+                    "story_title": "\u30ec\u30fc\u30d6\u30eb\u30fb\u30ab\u30d7\u30ea\u30b7\u30e5\u30fc",
+                    "voice_enable": ["1", "1"],
+                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F83%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D946543956", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F83%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D386210588"],
+                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F83%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D33820151", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F83%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D388588773"],
+                    "open_flag": ["1", "1"],
+                    "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_083_1.jpg%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_083_2.jpg%3Fv%3D20101001000000"],
+                    "movie_name_voice": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_early.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_late.png%3Fv%3D20101001000000"]
+                }, {
+                    "story_id": "66",
+                    "story_title": "\u30ab\u30c9\u30fc\u30fb\u30c9\u30fb\u30ce\u30a8\u30eb",
+                    "voice_enable": ["1", "1"],
+                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F66%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D809031363", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F66%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D853294528"],
+                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F66%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D520039743", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F66%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D148814504"],
+                    "open_flag": ["1", "1"],
+                    "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_066_1.jpg%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_066_2.jpg%3Fv%3D20101001000000"],
+                    "movie_name_voice": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_early.png%3Fv%3D20101001000000", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_cute_late.png%3Fv%3D20101001000000"]
+                }];
+                idol.images = {
+                    "bg": {
+                        "1": {
+                            "cu": "12008305/image_sp/ui/mypage_new/bg/bg_idol_reality_1_cu.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_1_co.jpg%3Fv%3D20170222083844",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_1_pa.jpg%3Fv%3D20170222083844",
+                            "tr": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_f_pa.jpg%3Fv%3D20170222083844"
+                        },
+                        "2": {
+                            "cu": "12008305/image_sp/ui/mypage_new/bg/bg_idol_reality_2_cu.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_2_co.jpg%3Fv%3D20170222083844",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_2_pa.jpg%3Fv%3D20170222083844"
+                        },
+                        "3": {
+                            "cu": "12008305/image_sp/ui/mypage_new/bg/bg_idol_reality_3_cu.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_3_co.jpg%3Fv%3D20170222083844",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_3_pa.jpg%3Fv%3D20170222083844",
+                            "tr": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_f2_pa.jpg%3Fv%3D20170222083844"
+                        },
+                        "4": {
+                            "cu": "12008305/image_sp/ui/mypage_new/bg/bg_idol_reality_4_cu.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_4_co.jpg%3Fv%3D20170222083844",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_idol_reality_4_pa.jpg%3Fv%3D20170222083844"
+                        },
+                        "5": {
+                            "cu": "12008305/image_sp/ui/gallery/bg_sr_cute.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fgallery%2Fbg_sr_cool.jpg%3Fv%3D20170222083842",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fgallery%2Fbg_sr_passion.jpg%3Fv%3D20170222083842",
+                            "tr": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fgallery%2Fbg_sr_trainer.jpg%3Fv%3D20170222083842"
+                        },
+                        "6": {
+                            "cu": "12008305/image_sp/ui/gallery/bg_sr_cute.jpg",
+                            "co": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fgallery%2Fbg_sr_cool.jpg%3Fv%3D20170222083842",
+                            "pa": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fgallery%2Fbg_sr_passion.jpg%3Fv%3D20170222083842"
+                        }
+                    },
+                    "l": ["12008305/image_sp/card/xxl/204xxx0013_1.jpg", 
+                          "12008305/image_sp/card/xxl/204xxx0013_3.jpg", 
+                          "12008305/image_sp/card/xxl/205xxx0013_1.jpg", 
+                          "12008305/image_sp/card/xxl/205xxx0013_3.jpg"],
+                    "l_premium": {
+                    },
+                    "l_nosign": ["12008305/image_sp/card/xl/204xxx0013_0.png", 
+                                  "12008305/image_sp/card/xl/204xxx0013_2.png", 
+                                  "12008305/image_sp/card/xl/205xxx0013_0.png", 
+                                  "12008305/image_sp/card/xl/205xxx0013_2.png"],
+                    "l_nosign_p": {
+                    },
+                    "l_noframe": [
+                                 "12008305/image_sp/card/long/chara2d_gs001_204xxx_0.png", 
+                                 "12008305/image_sp/card/long/chara2d_gs001_204xxx_0.png", 
+                                 "12008305/image_sp/card/long/chara2d_gs001_205xxx_0.png", 
+                                 "12008305/image_sp/card/long/chara2d_gs001_205xxx_0.png"],
+                    "mask_l": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+                    "mask_l2": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+                    "mask_l_p": [],
+                    "mask_l2_p": [],
+                    "xs": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fdad249d2193e48fede1efb6b86ce152f.jpg%3Fv%3D20170222083223", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fb9e2f6db7e3b84a0319b31c875323c03.jpg%3Fv%3D20170222083223", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F749918764164a20ffd9548b6e3329cb7.jpg%3Fv%3D20170222083224", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F06e634647cb9db3a1ae3cd4f0f8c1fdc.jpg%3Fv%3D20170222083225", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F87b9ce294ee324ef107117cd775e3e41.jpg%3Fv%3D20170222083224", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F8bd62d14e7ae5a19612cb4f63e7bc910.jpg%3Fv%3D20170222083225", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F46b8c7e64644fefca3f9c7836f2c8f40.jpg%3Fv%3D20170222083224", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fae2a65d68ad26995c036e4a212c15f18.jpg%3Fv%3D20170222083225", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fdf09853dd69726803c595f8a99e084fb.jpg%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F27fa9a5d9820c3587dfed43d52d01d93.jpg%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F3055dffe2520e6a28427482ae61582e9.jpg%3Fv%3D20170222083226", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F5f3a262bdcb15fd59261d1d67eed56e3.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F403297028737ce2c944bfc812dba6c94.jpg%3Fv%3D20170222083226", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fbe20e1ce2d5b116f0b9fecbecf298a48.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Faf0f233de4c2dfbac1e5a8bf1768dcf6.jpg%3Fv%3D20170222083226", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fc827cb0a7ab82a4395250ab254d6fbcf.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Ffdf5b5e967d72bb2b7acf1b43953dbd2.jpg%3Fv%3D20170222083227", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Faa3d9312403ed3e40e7f92b771676ea9.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Ff4add4b54fc6ff462caf154441e049cf.jpg%3Fv%3D20170222083227", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fabe06fbcf68900a285b0f2244403214e.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F44b0359478c5fbc5a8dcb0d7d91a3776.jpg%3Fv%3D20170222083227", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fbb156a253fc247462a87b20eee8770f5.jpg%3Fv%3D20170222083228", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F0c124be126082f0e4dce8d404eb538dd.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F3f7c71119ba2d2a52eea91026bf64741.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fdee9c4ef7a73af8209eb2f5e4024e0f2.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F2002e5edd75e141a883e9d93c4c5de5f.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F1622bfbb2378494857c6fca81bac6d63.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2F924ba34f567420135c3dce1cec0bee40.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Fb693bd0e54ba93faec0ea887d456197f.jpg%3Fv%3D20190524145641", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fxs%2Ff1def983dbaa47b2c3017643a48ca207.jpg%3Fv%3D20190524145641"],
+                    "m2": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fdad249d2193e48fede1efb6b86ce152f.jpg%3Fv%3D20170222082926", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fb9e2f6db7e3b84a0319b31c875323c03.jpg%3Fv%3D20170222082926", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F749918764164a20ffd9548b6e3329cb7.jpg%3Fv%3D20190524145601", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F06e634647cb9db3a1ae3cd4f0f8c1fdc.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F87b9ce294ee324ef107117cd775e3e41.jpg%3Fv%3D20190524145601", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F8bd62d14e7ae5a19612cb4f63e7bc910.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F46b8c7e64644fefca3f9c7836f2c8f40.jpg%3Fv%3D20190524145601", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fae2a65d68ad26995c036e4a212c15f18.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fdf09853dd69726803c595f8a99e084fb.jpg%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F27fa9a5d9820c3587dfed43d52d01d93.jpg%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F3055dffe2520e6a28427482ae61582e9.jpg%3Fv%3D20170222082929", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F5f3a262bdcb15fd59261d1d67eed56e3.jpg%3Fv%3D20170222082931", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F403297028737ce2c944bfc812dba6c94.jpg%3Fv%3D20170222082929", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fbe20e1ce2d5b116f0b9fecbecf298a48.jpg%3Fv%3D20170222082931", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Faf0f233de4c2dfbac1e5a8bf1768dcf6.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fc827cb0a7ab82a4395250ab254d6fbcf.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Ffdf5b5e967d72bb2b7acf1b43953dbd2.jpg%3Fv%3D20170222082930", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Faa3d9312403ed3e40e7f92b771676ea9.jpg%3Fv%3D20170222082931", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Ff4add4b54fc6ff462caf154441e049cf.jpg%3Fv%3D20170222082930", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fabe06fbcf68900a285b0f2244403214e.jpg%3Fv%3D20170222082931", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F44b0359478c5fbc5a8dcb0d7d91a3776.jpg%3Fv%3D20170222082930", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fbb156a253fc247462a87b20eee8770f5.jpg%3Fv%3D20170222082932", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F0c124be126082f0e4dce8d404eb538dd.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F3f7c71119ba2d2a52eea91026bf64741.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fdee9c4ef7a73af8209eb2f5e4024e0f2.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F2002e5edd75e141a883e9d93c4c5de5f.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F1622bfbb2378494857c6fca81bac6d63.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2F924ba34f567420135c3dce1cec0bee40.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Fb693bd0e54ba93faec0ea887d456197f.jpg%3Fv%3D20190524145602", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fm2%2Ff1def983dbaa47b2c3017643a48ca207.jpg%3Fv%3D20190524145602"],
+                    "quest": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fdad249d2193e48fede1efb6b86ce152f.png%3Fv%3D20190524145609", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fb9e2f6db7e3b84a0319b31c875323c03.png%3Fv%3D20170222083010", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F749918764164a20ffd9548b6e3329cb7.png%3Fv%3D20170222083010", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F06e634647cb9db3a1ae3cd4f0f8c1fdc.png%3Fv%3D20170222083012", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F87b9ce294ee324ef107117cd775e3e41.png%3Fv%3D20170222083011", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F8bd62d14e7ae5a19612cb4f63e7bc910.png%3Fv%3D20170222083012", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F46b8c7e64644fefca3f9c7836f2c8f40.png%3Fv%3D20170222083011", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fae2a65d68ad26995c036e4a212c15f18.png%3Fv%3D20170222083012", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fdf09853dd69726803c595f8a99e084fb.png%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F27fa9a5d9820c3587dfed43d52d01d93.png%3Fv%3D20190524185624", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F3055dffe2520e6a28427482ae61582e9.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F5f3a262bdcb15fd59261d1d67eed56e3.jpg%3Fv%3D20170222083014", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F403297028737ce2c944bfc812dba6c94.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fbe20e1ce2d5b116f0b9fecbecf298a48.jpg%3Fv%3D20170222083014", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Faf0f233de4c2dfbac1e5a8bf1768dcf6.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fc827cb0a7ab82a4395250ab254d6fbcf.jpg%3Fv%3D20170222083014", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Ffdf5b5e967d72bb2b7acf1b43953dbd2.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Faa3d9312403ed3e40e7f92b771676ea9.jpg%3Fv%3D20170222083014", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Ff4add4b54fc6ff462caf154441e049cf.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fabe06fbcf68900a285b0f2244403214e.jpg%3Fv%3D20170222083014", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F44b0359478c5fbc5a8dcb0d7d91a3776.jpg%3Fv%3D20170222083013", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fbb156a253fc247462a87b20eee8770f5.jpg%3Fv%3D20170222083015", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F0c124be126082f0e4dce8d404eb538dd.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F3f7c71119ba2d2a52eea91026bf64741.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fdee9c4ef7a73af8209eb2f5e4024e0f2.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F2002e5edd75e141a883e9d93c4c5de5f.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F1622bfbb2378494857c6fca81bac6d63.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2F924ba34f567420135c3dce1cec0bee40.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Fb693bd0e54ba93faec0ea887d456197f.jpg%3Fv%3D20190524145610", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fquest%2Ff1def983dbaa47b2c3017643a48ca207.jpg%3Fv%3D20190524145610"]
+                };
+                idol.ios_app_flg = false;
+                idol.apple_review = null;
+                window.idol = idol;
+            })();
+            var birthday_flag = false;
+            var select_card_index = "0";
+            var selected_num = null;
+            var url_trade = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fauction%2Fsearch_top%2F0%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D724096941';
+            var url_album = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Farchive%2Fview%2F__hash_card_id__%2F0%2F0%2F0%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D120609137';
+            var url_event_memory = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmemory%2Fdetail%2F__event_id__%2F__category_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D382349840';
+            var url_other_event = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_gallery%2Findex%2F0%2F0%2F2%2F0%3Fis_search%3D1%26event_category%3D__category_id__%26event_id%3D__event_id__%26l_frm%3DIdol_gallery_idol_detail_1%26rnd%3D793460736';
+            var url_cartoon = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcartoon%2Fsearch%3F__idol_search_param__%26l_frm%3DIdol_gallery_idol_detail_1%26rnd%3D396320908';
+            var url_comment_5th_redirect = "idol_gallery/idol_detail/__hash_card_id__";
+            var slider_pos = 0;
+            var select_tab = 0;
+            var comments_info = {
+                "mltd_a1": {
+                    "category": "home",
+                    "type": "awake_1",
+                    "conditions": "none"
+                },
+                "mltd_a2": {
+                    "category": "home",
+                    "type": "awake_2",
+                    "conditions": "none"
+                },
+                "mltd_a3": {
+                    "category": "home",
+                    "type": "awake_3",
+                    "conditions": "none"
+                },
+                "mltd_ag1": {
+                    "category": "home",
+                    "type": "awake_gauge_25",
+                    "conditions": "none"
+                },
+                "mltd_ag2": {
+                    "category": "home",
+                    "type": "awake_gauge_50",
+                    "conditions": "none"
+                },
+                "mltd_ag3": {
+                    "category": "home",
+                    "type": "awake_gauge_75",
+                    "conditions": "none"
+                },
+                "mltd_ag4": {
+                    "category": "home",
+                    "type": "awake_gauge_max",
+                    "conditions": "none"
+                },
+                "mltd_ag5": {
+                    "category": "home",
+                    "type": "awake_gauge_max",
+                    "conditions": "none"
+                },
+                "mltd_ag6": {
+                    "category": "home",
+                    "type": "awake_gauge_max",
+                    "conditions": "none"
+                },
+                "mltd_g1": {
+                    "category": "home",
+                    "type": "greeting",
+                    "conditions": "none"
+                },
+                "mltd_g2": {
+                    "category": "home",
+                    "type": "greeting",
+                    "conditions": "none"
+                },
+                "mltd_g3": {
+                    "category": "home",
+                    "type": "greeting",
+                    "conditions": "none"
+                },
+                "mltd_c1": {
+                    "category": "dress",
+                    "type": "costume",
+                    "conditions": "none"
+                },
+                "mltd_c2": {
+                    "category": "dress",
+                    "type": "costume",
+                    "conditions": "none"
+                },
+                "mltd_c3": {
+                    "category": "dress",
+                    "type": "costume",
+                    "conditions": "none"
+                },
+                "mltd_c4": {
+                    "category": "dress",
+                    "type": "costume",
+                    "conditions": "none"
+                },
+                "mltd_u1": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u2": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u3": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u4": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u5": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u6": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u7": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u8": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u9": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u10": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_u11": {
+                    "category": "dress",
+                    "type": "unique",
+                    "conditions": "none"
+                },
+                "mltd_l1": {
+                    "category": "live",
+                    "type": "live_start",
+                    "conditions": "none"
+                },
+                "mltd_l2": {
+                    "category": "live",
+                    "type": "report",
+                    "conditions": "none"
+                },
+                "mltd_l3": {
+                    "category": "live",
+                    "type": "report",
+                    "conditions": "none"
+                },
+                "mltd_l4": {
+                    "category": "live",
+                    "type": "report",
+                    "conditions": "none"
+                },
+                "mltd_l5": {
+                    "category": "live",
+                    "type": "report",
+                    "conditions": "none"
+                },
+                "mltd_l6": {
+                    "category": "live",
+                    "type": "report_score",
+                    "conditions": "none"
+                },
+                "mltd_l7": {
+                    "category": "live",
+                    "type": "report_score",
+                    "conditions": "none"
+                },
+                "mltd_l8": {
+                    "category": "live",
+                    "type": "report_combo",
+                    "conditions": "none"
+                },
+                "mltd_l9": {
+                    "category": "live",
+                    "type": "report_combo",
+                    "conditions": "none"
+                },
+                "mltd_l10": {
+                    "category": "live",
+                    "type": "report_clear",
+                    "conditions": "none"
+                },
+                "mltd_l11": {
+                    "category": "live",
+                    "type": "report_clear",
+                    "conditions": "none"
+                },
+                "mltd_l12": {
+                    "category": "etc",
+                    "type": "lank_up",
+                    "conditions": "none"
+                },
+                "mltd_d1": {
+                    "category": "etc",
+                    "type": "d3",
+                    "conditions": "none"
+                },
+                "mltd_d2": {
+                    "category": "etc",
+                    "type": "d3",
+                    "conditions": "none"
+                },
+                "mltd_d3": {
+                    "category": "etc",
+                    "type": "m_lesson",
+                    "conditions": "none"
+                },
+                "mltd_d4": {
+                    "category": "etc",
+                    "type": "m_lesson",
+                    "conditions": "none"
+                },
+                "mltd_d5": {
+                    "category": "etc",
+                    "type": "d6",
+                    "conditions": "none"
+                }
+            };
+            var type_names = {
+                "d3": "레슨",
+                "d6": "타이틀 콜",
+                "awake_1": "카드보이스 각성 전",
+                "awake_2": "카드보이스 각성 후",
+                "awake_3": "카드 각성",
+                "awake_gauge_25": "각성게이지 25%",
+                "awake_gauge_50": "각성게이지 50%",
+                "awake_gauge_75": "각성게이지 75%",
+                "awake_gauge_max": "각성게이지MAX",
+                "greeting": "아이돌 고유대사",
+                "costume": "드레스업",
+                "unique": "후레아이",
+                "live_start": "라이브 스타트",
+                "report": "LIVE REPORT",
+                "report_score": "LIVE REPORT SCORE",
+                "report_combo": "LIVE REPORT COMBO",
+                "report_clear": "LIVE REPORT CLEAR",
+                "lank_up": "프로듀서 랭크업",
+                "m_lesson": "마스터레슨"
+            };
+            var category_names = {
+                "home": "홈",
+                "dress": "후레아이",
+                "live": "라이브",
+                "etc": "기타"
+            };
+            var conditions_names = {
+                "none": "조건 없음",
+                "get_idol": "아이돌이 소속되면 열람할 수 있습니다",
+                "love_max": "친애도MAX가 되면 열람할 수 있습니다"
+            };
+            var comment_tab_start = null;
+            var show_premium = false;
+        </script>
+        <script src="12008305/js/underscore-min.js"></script>
+        <script src="12008305/js/backbone-min.js"></script>
+        <script src="12008305/js/ilibrary.js" type="text/javascript"></script>
+        <script src="12008305/js/islider.js" type="text/javascript"></script>
+        <script src="12008305/js/boombox.min.js" type="text/javascript"></script>
+        <script src="12008305/js/min/gallery.min.js" type="text/javascript"></script>
+        <script src="12008305/js/min/bb_loader.min.js" type="text/javascript"></script>
+        <div class="m-Top8 m-Btm8">
+            <img src="12008305/image_sp/ui/line_hoshi.jpg" width="100%">
+        </div>
+        <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">극장에서 검색</a>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+            <div class="t-Cnt">(C)窪岡俊之 (C)2011 BNEI</div>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
