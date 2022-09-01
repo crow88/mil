@@ -32190,11 +32190,11 @@ a.check_close_btn.petit {
 
 .blog .main .main_text {
     float: left;
-    width: 220px;
+    width: 300px;
     padding: 10px 4px;
     font-size: 12px;
     font-weight: bold;
-    color: #A5A5A5;
+    color: #000000;
     text-align: left
 }
 
