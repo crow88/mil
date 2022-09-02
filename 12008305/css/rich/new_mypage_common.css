@@ -32158,7 +32158,7 @@ a.check_close_btn.petit {
 .blog .title .title_text {
     float: left;
     width: 200px;
-    color: #000000;
+    color: #333333;
     padding: 5px 4px;
     text-align: left;
     vertical-align: middle
@@ -32194,7 +32194,7 @@ a.check_close_btn.petit {
     padding: 10px 4px;
     font-size: 12px;
     font-weight: bold;
-    color: #000000;
+    color: #333333;
     text-align: left
 }
 
