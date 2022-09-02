@@ -32181,7 +32181,7 @@ a.check_close_btn.petit {
 .blog .main .date {
     float: left;
     width: 220px;
-    padding: 0 4px;
+    padding: 0 9px;
     font-size: 8px;
     font-weight: bold;
     color: #A5A5A5;
@@ -32191,9 +32191,8 @@ a.check_close_btn.petit {
 .blog .main .main_text {
     float: left;
     width: 300px;
-    padding: 10px 4px;
+    padding: 10px 9px;
     font-size: 12px;
-    font-weight: bold;
     color: #333333;
     text-align: left
 }
